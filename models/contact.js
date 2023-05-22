@@ -6,7 +6,7 @@ const { handleMongooseError } = require("../helpers");
 const contactSchema = Schema({
     name: {
         type: String,
-        requires: [true, "Name is required"],
+        required: [true, "Name is required"],
     },
     email: {
         type: String,
